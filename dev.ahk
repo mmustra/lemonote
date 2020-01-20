@@ -1,0 +1,1 @@
+﻿#Include %A_LineFile%\..\app\index.ahk

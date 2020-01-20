@@ -1,0 +1,178 @@
+LEMONOTE v1.0.0
+===============
+
+"When aviation gives you lemons, note it!"
+This tool helps you copy/paste notes in any application and generate GDS commands
+through user friendly dialogs.
+
+For more info go to:
+https://github.com/mmustra/lemonote
+
+
+USAGE
+=====
+
+Once Lemonote is running it will show in your tray (yellow lemon icon).
+By right clicking on it you will get list of options to choose from:
+
+- Reload Lemonote; reloads application and sets hotstrings for notes.
+- Suspend Hotkeys; disables all hotkeys and hotstrings.
+- Change GDS; activate different GDS module and its actions.
+- Notes; opens folder where you'll keep all your notes.
+- Help; opens this quick help file.
+- Exit; exits application.
+
+
+NOTES ACTIONS
+=============
+
+All notes need to be stored as valid type documents in "Notes" folder. If you want
+to have rich text format notes, you need to have MS Word 2007+ installed, otherwise
+use plain notes. To activate Notes action, start by typing `:` followed by `filename`
+text (case insensitive) and ending it by hitting key `Enter`.
+
+For instance if you created filename called "mysig.docx" in "Notes" folder,
+to paste its contents somewhere, you will have to type:
+
+> :mysig<ENTER>
+
+You can have subfolders inside "Notes" folder to better organize your notes.
+If across all folders/subfolders you create more files with same name (case insensitive),
+only one will be active (parent folder takes precedence; with sibling folders alphabetical
+order takes precedence).
+
+When adding new note:
+
+1. Open "Notes" folder (right click on Lemonote icon, then click "Notes").
+2. Create new document file (.txt, .doc, .docx, ...) file with your content. Save file.
+3. Reload Lemonote (double click the Lemonote icon in tray or right click on
+   Lemonote icon in tray, then click "Reload Lemonote") to activate hotstring.
+
+Valid file types:
+.txt, .doc, .docm, .docx, .dot, .dotm, .dotx, .htm, .html, .mht, .mhtml, .odt,
+.rtf, .wps, .xml, .xps
+
+
+GDS ACTIONS
+===========
+
+To activate GDS action, start by typing `::` followed by `command` text and ending it
+by hitting key `ENTER`.
+
+For example, if you want to generate APIS "docs" command you will have to type:
+
+> ::docs<ENTER>
+
+Depending on GDS there may be different set of actions.
+
+- Amadeus (beta)
+  ::list - [Hotstring] Quick command list
+  ::amadeus - [Hotstring] Quick command list
+  ::docs - [Hotstring] SSR Passport information dialog
+  ::doco - [Hotstring] SSR Visa information dialog
+  ::doca - [Hotstring] SSR Destination information dialog
+  ::pctc - [Hotstring] Phone contact dialog
+  ::ctce - [Hotstring] Email contact dialog
+  ::ctcm - [Hotstring] Mobile contact dialog (short version)
+
+- Sabre
+  ::list - [Hotstring] Quick command list
+  ::sabre - [Hotstring] Quick command list
+  ::docs - [Hotstring] SSR Passport information dialog
+  ::doco - [Hotstring] SSR Visa information dialog
+  ::doca - [Hotstring] SSR Destination information dialog
+  ::pctc - [Hotstring] Phone contact dialog
+  ::ctce - [Hotstring] Email contact dialog
+  ::ctcm - [Hotstring] Mobile contact dialog (short version)
+  ::pctm - [Hotstring] Mobile contact dialog (long version)
+  ::ctcr - [Hotstring] Refusal contact dialog
+
+
+UTILITY ACTIONS
+===============
+
+Tools to help with everyday work.
+
+<ctrl + shift + v> - [Hotkey] Paste text without extra formatting
+
+
+FAQ
+===
+
+General:
+
+- Can I use Lemonote professionally in my company?
+> Yes. You are free to use Lemonote in your company or home as you wish.
+  Lemonote is released under MIT license.
+
+- Is Lemonote safe?
+> Yes. If AV reports Lemonote as threat, it is false-positive.
+
+- Does Lemonote require internet connection?
+> No. Lemonote doesn't require internet connection to work. It will not connect
+  to any servers even if the internet connection is available.
+
+- Does Lemonote communicate with my GDS?
+> No. There isn't any kind of communication between Lemonote and your GDS. After you
+  use action to generate GDS command, Lemonote will not send it. User is responsible
+  for sending command.
+
+- Does Lemonote record my GDS commands?
+> No. Once GDS command is outputted, it will not be saved or reused again.
+
+- I've seen Lemonote on other web sites, is it ok to download it from there?
+> No. You should download Lemonote ONLY from this site. Other sites may provied
+  compromised version.
+
+- Will Lemonote work when I reinstall/change or use online version of my GDS platform?
+> Yes. Lemonote doesn't care about your GDS version, if it's desktop or web application.
+  As long the GDS/browser window is not minimized or closed,
+  it should output the GDS command.
+
+- Does Lemonote prefer one GDS over the other?
+> No. Sabre is better supported as it was main feature starting this project. At the moment
+  Amadeus is in beta, but with more user input it will be polished. Depending on interest
+  Lemonote may extend its support to Galileo and other systems.
+
+Problems:
+
+- I've added my files in "Notes" folder, but after entering hotstring ":filename<ENTER>"
+  command in my editor, Lemonote does nothing. Is this a bug?
+> No. After you add new files, you need to reload Lemonote for new hotstrings to be active.
+  You can reload Lemonote by double clicking the icon in tray or by right clicking on the
+  icon in tray and choosing "Reload Lemonote". Also be sure to check if you have duplicate
+  files in "Notes" folder, as only one will be active (parent folder takes precedence;
+  with sibling folders alphabetical order takes precedence).
+
+- Lemonote is thowring "MS Word missing" error. Is this a bug?
+> No. If you want to use rich text format notes (.doc/.docx files), you are required
+  to have MS Word 2007+ installed. You can use plain fromat notes (.txt files)
+  instead though.
+
+- Lemonote is thowring "Invalid note file" error. Is this a bug?
+> No. You're notes need to be saved in a valid type format.
+
+- Lemonote is thowring "Program window inactive" error. Is this a bug?
+> No. Your editor/program, from where you typed action, is either minimized or closed.
+
+- Lemonote is sometimes slow, showing "Initializing..." while getting note. Is this a bug?
+> No. Depending on size of your note, and if note is in rich or plain text format,
+  load time can vary. Lemonote will always try its best to get your notes asap.
+
+- Lemontote installation is thorwing warning message "Before reinstalling Lemonote close
+  the running instance...". Is this a bug?
+> No. Lemonte needs to be closed before fresh install/reinstall due to its cleanup routine.
+
+
+REQUIREMENTS
+============
+
+- Windows 7+
+- MS Office 2007+ (if you want to use formated notes)
+
+
+LICENSE
+=======
+
+The MIT License (MIT)
+Copyright (c) 2020-present, Marin Mustra
