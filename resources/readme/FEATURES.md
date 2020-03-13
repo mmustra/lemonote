@@ -1,8 +1,8 @@
-[:arrow_backward: Development](https://github.com/mmustra/lemonote#development)
+﻿[:arrow_backward: Development](https://github.com/mmustra/lemonote#development)
 
 ## Feature List
 
-List of core/additional features may change depending on demands.
+A list of core/additional features may change depending on demands.
 
 #### Core
 

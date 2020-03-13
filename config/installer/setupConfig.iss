@@ -1,4 +1,4 @@
-#define AppName "Lemonote"
+﻿#define AppName "Lemonote"
 #define AppFileName "Lemonote.exe"
 #define AppVersion "1.0.0"
 

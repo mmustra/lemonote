@@ -1,4 +1,4 @@
-[:arrow_backward: Development](https://github.com/mmustra/lemonote#development)
+﻿[:arrow_backward: Development](https://github.com/mmustra/lemonote#development)
 
 # Changelog
 
