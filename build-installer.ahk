@@ -28,7 +28,9 @@ FileCopyDir, % devConfig.notesFolderPath, % buildConfig.notesFolderPath, true
 FileCopy, % devConfig.iconsFilePath, % buildConfig.iconsFilePath, true
 FileCopy, % devConfig.helpFilePath, % buildConfig.helpFilePath, true
 FileCopy, % devConfig.configIniFilePath, % buildConfig.configIniFilePath, true
-FileCopy, % devConfig.licenseFilePath, % buildConfig.licenseFilePath, true
+licenseFilePath := devConfig.licenseFilePath
+FileRead, licenseText, *P65001 %licenseFilePath%
+FileAppend, % licenseText, % buildConfig.licenseFilePath, UTF-8
 
 Progress, 40
 

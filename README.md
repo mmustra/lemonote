@@ -1,4 +1,4 @@
-﻿<p align="center">
+<p align="center">
   <h1>
     Lemonote
     <a href="#">
@@ -148,7 +148,7 @@ These actions are meant to give you help in everyday workflow and will be expand
 
 ## Built Using <a name="builtUsing"></a>
 
-- [Autohotkey](https://www.autohotkey.com) - Scripting language used for development
+- [AutoHotkey](https://www.autohotkey.com) - Scripting language used for development
 - [Inno Setup](http://www.jrsoftware.org/isinfo.php) - Installer for Windows
 
 ## Acknowledgments <a name="acknowledgments"></a>

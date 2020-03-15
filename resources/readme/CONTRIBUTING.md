@@ -1,14 +1,14 @@
-﻿[:arrow_backward: Development](https://github.com/mmustra/lemonote#development)
+[:arrow_backward: Development](https://github.com/mmustra/lemonote#development)
 
 ## Contributing
 
 #### Requirements
 
-This project was created with [Autohotkey](https://www.autohotkey.com) v1.1.32.00 and with [Inno Setup](http://www.jrsoftware.org/isinfo.php) v6.0.4. Tests are done within [VirtualBox](https://www.virtualbox.org) v6.1.
+This project was created with [AutoHotkey](https://www.autohotkey.com) v1.1.32.00 and with [Inno Setup](http://www.jrsoftware.org/isinfo.php) v6.0.4. Tests are done within [VirtualBox](https://www.virtualbox.org) v6.1.
 
 To prepare a dev environment you need to:
 
-1. Install Autohotkey and Inno Setup.
+1. Install AutoHotkey and Inno Setup.
 2. Set paths for user environment variables.
    > C:\Users\\[user]\AppData\Local\Programs\Inno Setup 6  
    > C:\Program Files\AutoHotkey\Compiler
